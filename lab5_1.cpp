@@ -11,9 +11,9 @@ int main(){
 	int age[N] ;
 	int i=0;
 	while(i < N){
-		cout << "Name of student = ";
+		cout << "Name of student" << i+1 <<"= " ;
 	    cin >> name[i];
-		cout << "Age of student = ";
+		cout << "Age of student" << i+1 <<"= ";
 		cin >> age[i];
 		i++;
 	}
@@ -29,9 +29,10 @@ int main(){
 	while(a < N){
 		if(key == age[N-x]){
 			cout << name[N-x] << endl;
-			a++;
-			x++;
+		
 		}
+		a++;
+		x++;
 	}
     cout << "--------------------------------------\n";
 	
